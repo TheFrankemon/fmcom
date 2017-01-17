@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>FrancoMontiel.com</title>
+	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32"/>
+	<link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16"/>
+	<link rel="stylesheet" type="text/css" href="styles/index.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/register.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/search.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/videos.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/video_player.css"/>
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="lib/angular-route.min.js"></script>
+	<script type="text/javascript" src="lib/angular-clickout.min.js"></script>
+</head>
+<body ng-app="fmcom">
+<div ng-include="'views/search.html'" ng-controller="searchController"></div>
+<div ng-view></div>
+
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/controllers/search.js"></script>
+<script type="text/javascript" src="scripts/controllers/videos.js"></script>
+<script type="text/javascript" src="scripts/controllers/videoPlayer.js"></script>
+<script type="text/javascript" src="scripts/controllers/bottomBar.js"></script>
+<script type="text/javascript" src="scripts/factories/currentUser.js"></script>
+<script type="text/javascript" src="scripts/factories/usersFactory.js"></script>
+<script type="text/javascript" src="scripts/factories/videosFactory.js"></script>
+<script type="text/javascript" src="scripts/factories/filters.js"></script>
+<script type="text/javascript" src="scripts/directives/videoThumbnail.js"></script>
+<script type="text/javascript" src="scripts/directives/videoComment.js"></script>
+</body>
+</html>

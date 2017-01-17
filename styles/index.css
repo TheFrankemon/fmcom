@@ -1,0 +1,19 @@
+body {
+	background: url(../assets/images/bkgrnd.png);
+	background-attachment: fixed;
+}
+
+#logo {
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+#logo figure {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#logo img {
+	width: 100%;
+}

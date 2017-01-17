@@ -1,0 +1,28 @@
+<div id="video_player_container">
+<section id="video">
+	<div class="video_player">
+		<iframe ng-src="{{ video.url }}" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="video_player_info">
+		<div class="video_text">
+			<h2>{{ video.title }}</h2><br/>
+			<h4>{{ video.description }}</h4><br/>
+			<h5 ng-repeat="tag in video.tags">{{ tag }}</h5>
+		</div>
+		<div class="video_rating">
+			<input type="button" name="plus" value="&#9650;" ng-click="plus1()">
+			<h3>{{ video.rating }}</h3>
+			<input type="button" name="minus" value="&#9660;" ng-click="minus1()">
+		</div>
+	</div>
+</section>
+<hr>
+<section id="comments">
+	<div class="new_comment">
+		<textarea ng-model="newComment.text"></textarea>
+		<input type="button" value="Comment" class="comment_bttn" ng-click="saveComment()">
+	</div>
+	<h1>Comments</h1>
+	<video-comment ng-repeat="comment in video.comments" comment-data="comment"></video-comment>
+</section>
+</div>

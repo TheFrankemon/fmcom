@@ -1,0 +1,11 @@
+{
+  "name": "fm.com",
+  "version": "1.0.0",
+  "description": "Franco Montiel's homepage",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Franco Montiel",
+  "license": "ISC"
+}
