@@ -9,7 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/register.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/search.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/videos.css"/>
-	<link rel="stylesheet" type="text/css" href="styles/video_player.css"/>
+	<script src="/node_modules/angular/angular.js"></script>
+	<script src="/node_modules/angular-route/angular-route.js"></script>
 </head>
 <body ng-app="fmcom">
 <div ng-include="'views/search.html'" ng-controller="searchController"></div>
@@ -18,12 +19,6 @@
 <script type="text/javascript" src="scripts/app.js"></script>
 <script type="text/javascript" src="scripts/controllers/search.js"></script>
 <script type="text/javascript" src="scripts/controllers/videos.js"></script>
-<script type="text/javascript" src="scripts/controllers/videoPlayer.js"></script>
-<script type="text/javascript" src="scripts/controllers/bottomBar.js"></script>
-<script type="text/javascript" src="scripts/factories/currentUser.js"></script>
-<script type="text/javascript" src="scripts/factories/usersFactory.js"></script>
-<script type="text/javascript" src="scripts/factories/videosFactory.js"></script>
-<script type="text/javascript" src="scripts/factories/filters.js"></script>
 <script type="text/javascript" src="scripts/directives/videoThumbnail.js"></script>
 <script type="text/javascript" src="scripts/directives/videoComment.js"></script>
 </body>

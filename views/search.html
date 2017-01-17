@@ -7,15 +7,9 @@
 		</a>
 		</figure>
 		<div id="search_form">
-			<input type="button" value="Filters" class="filters_bttn" ng-click="toggleFilters()">
-			<input type="search" placeholder="Search..." name="searchquery" id="search_box" ng-model="searchQuery" ng-change="search()">
-			<input type="image" src="assets/images/search_icon.png" alt="Search" class="search_bttn" ng-click="search()">
-		</div>
-	</div>
-	<div id="filters" ng-show="filtersAreShowing">
-		<div ng-repeat="filter in searchFilters | limitTo: 48" class="filter">
-			<input type="checkbox" ng-model="filter.value" ng-change="search()">
-			<span>{{ filter.name }}</span>
+			<input type="button" value="Filters" class="filters_bttn">
+			<input type="search" placeholder="Search..." name="searchquery" id="search_box">
+			<input type="image" src="assets/images/search_icon.png" alt="Search" class="search_bttn">
 		</div>
 	</div>
 </section>
