@@ -1,13 +1,38 @@
+body {
+	background-image: url(../assets/images/zydah_small.png);
+	background-size:100%;
+	background-position: center;
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
 #first {
 	padding-top: 70px;
 	background-image: url(../assets/images/bkgrnd.png);
 	background-size:100%;
-	background-position:center;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 #second {
-	background-color: #1800FF;
 	background-image: url(../assets/images/bkgrnd2.png);
 	background-size:100%;
-	background-position:center;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#firsttxt, #secondtxt {
+	background-image: url(../assets/images/scrap.png);
+	background-repeat: no-repeat;
+	overflow: visible;
+}
+
+.col-md-10 {
+	-webkit-transform: rotateZ(-10deg); /* Chrome, Safari, Opera */
+	-moz-transform: rotateZ(-10deg); /* Firefox */
+    transform: rotateZ(-10deg);
+}
+
+#onetwo {
+	background-color: rgba(0,0,255, 0.5);
 }
