@@ -1,0 +1,13 @@
+#first {
+	padding-top: 70px;
+	background-image: url(../assets/images/bkgrnd.png);
+	background-size:100%;
+	background-position:center;
+}
+
+#second {
+	background-color: #1800FF;
+	background-image: url(../assets/images/bkgrnd2.png);
+	background-size:100%;
+	background-position:center;
+}

@@ -1,210 +1,38 @@
-@media screen and (max-width: 481px) {
-	#search {
-		width: 100%;
-		position: fixed;
-		left: 0;
-		top: 35px;
-		right: 0;
-		height: 35px;
-		background-color: #d9d9d9;
-		border-bottom: 2px solid #000000;
-		z-index: 999;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
-
-	.search_cont {
-		width: 100%;
-		height: 35px;
-		margin: 0 auto;
-	}
-
-	#search figure {
-		position: fixed;
-		height: 35px;
-		top: 0;
-		margin: 0 auto;
-		width: 100%;
-		background-color: #00e1b9;
-	}
-
-	#search img {
-		display: table;
-		height: 35px;
-		margin: 0 auto;
-	}
-
-	#search_form {
-		margin: 0 auto;
-		width: 100%;
-		height: 35px;
-		vertical-align: middle;
-		float: right;
-		display: table-cell;
-	}
-
-	#search_box {
-		max-width: 350px;
-		width: 60%;
-		height: 80%;
-		border-radius: 4px;
-		border: 1px solid #ffffff;
-		vertical-align: middle;
-		margin-top: 3px;
-	 }
-
-	.filters_bttn {
-		border-radius: 10px;
-		background-color: #ffffff;
-		border: 3px solid #a2a2a2;
-		height: 80%;
-		font: 16px "Roboto";
-		line-height: 80%;
-		vertical-align: bottom;
-	}
-
-	.filters_bttn:hover {
-		background-color: #a2a2a2;
-	}
-
-	.search_bttn {
-		height: 50%;
-		vertical-align: middle;
-	}
-
-	.search_bttn:hover {
-		height: 60%;
-	}
-
-	#filters {
-		position: fixed;
-	    top: 70px;
-	    margin: 0 auto;
-	    width: 100%;
-	    height: 120px;
-	    background-color: rgba(255, 255, 255, 0.8);
-	    font: 16px "Roboto";
-	    z-index: 999;
-	    display: table;
-	}
-
-	.filter {
-		display: table-cell;
-		width: 30%;
-		margin: 0 auto;
-		height: 20px;
-		float: left;
-		margin: 0;
-		overflow: hidden;
-	}
-
-	.filter span {
-		height: 20px;
-		max-width: 70%;
-		word-break: break-all;
-	}
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.3);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
 }
 
-@media screen and (min-width: 480px) {
-	#search {
-		width: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		right: 0;
-		height: 35px;
-		background-color: #d9d9d9;
-		border-bottom: 2px solid #000000;
-		z-index: 999;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: #3344ff;
+    color:#ffffff;
+  }
+
+.nav.navbar-nav.navbar-right li a {
+	color: black;
+}
+
+.nav.navbar-nav.navbar-right.light li a {
+	color: white;
+}
+
+@media (max-width: 992px) {
+	body {
+		background:black;
 	}
 
-	.search_cont {
-		width: 90%;
-		height: 35px;
-		min-width: 480px;
-		margin: 0 auto;
-	}
-
-	#search figure {
-		margin: 0 auto;
-		float: left;
-		width: 130px;
-		margin: 0px;
-	}
-
-	#search img {
-		height: 35px;
-	}
-
-	#search_form {
-		margin: 0 auto;
-		max-width: 700px;
-		width: 60%;
-		height: 35px;
-		vertical-align: middle;
-		float: left;
-	}
-
-	#search_box {
-		max-width: 350px;
-		width: 60%;
-		height: 80%;
-		border-radius: 4px;
-		border: 1px solid #ffffff;
-		vertical-align: middle;
-		margin-top: 3px;
-	 }
-
-	.filters_bttn {
-		border-radius: 10px;
-		background-color: #ffffff;
-		border: 3px solid #a2a2a2;
-		height: 80%;
-		font: 16px "Roboto";
-		line-height: 80%;
-		vertical-align: bottom;
-	}
-
-	.filters_bttn:hover {
-		background-color: #a2a2a2;
-	}
-
-	.search_bttn {
-		height: 50%;
-		vertical-align: middle;
-	}
-
-	.search_bttn:hover {
-		height: 60%;
-	}
-
-	#filters {
-		position: fixed;
-	    top: 35px;
-	    left: 5%;
-	    margin: 0 auto;
-	    max-width: 800px;
-	    width: 80%;
-	    height: 120px;
-	    border: 3px solid #000000;
-	    background-color: rgba(255, 255, 255, 0.8);
-	    font: 16px "Roboto";
-	    z-index: 999;
-	    display: table;
-	}
-
-	.filter {
-		display: table-cell;
-		width: 25%;
-		height: 20px;
-		float: left;
-		margin: 0;
-		overflow: hidden;
-	}
-
-	.filter span {
-		height: 20px;
-		max-width: 70%;
-		word-break: break-all;
+	.opaque-navbar {
+    	background-color: black;
+    	height: 60px;
+    	transition: background-color .5s ease 0s;
 	}
 }
