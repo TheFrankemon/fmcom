@@ -2,6 +2,7 @@
     background-color: rgba(0,0,0,0.3);
   /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
     height: 60px;
+    margin-right: 17px;
     border-bottom: 0px;
     transition: background-color .5s ease 0s;
 }
@@ -12,10 +13,10 @@
     transition: background-color .5s ease 0s;
 }
 
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
     background-color: #3344ff;
     color:#ffffff;
-  }
+}
 
 .nav.navbar-nav.navbar-right li a {
 	color: black;
@@ -26,10 +27,6 @@
 }
 
 @media (max-width: 992px) {
-	body {
-		background:black;
-	}
-
 	.opaque-navbar {
     	background-color: black;
     	height: 60px;

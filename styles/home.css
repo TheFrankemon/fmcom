@@ -1,24 +1,43 @@
-body {
-	background-image: url(../assets/images/zydah_small.png);
-	background-size:100%;
-	background-position: center;
-	background-attachment: fixed;
-	overflow-x: hidden;
+.layer {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  min-height: 400px;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
-#first {
-	padding-top: 70px;
-	background-image: url(../assets/images/bkgrnd.png);
-	background-size:100%;
-	background-position: center;
-	background-attachment: fixed;
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
 }
 
-#second {
+.parallax-group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax-group .layer1 {
+	margin-top: 0px;
+	height: 2000px;
+	background-image: url(../assets/images/map.png);
+	background-size:100%;
+	background-position: center;
+	transform: translateZ(-4px) scale(5.05);
+}
+
+.parallax-group .layer2 {
+    margin-top: 20px;
+    min-height: 500px;
 	background-image: url(../assets/images/bkgrnd2.png);
 	background-size:100%;
 	background-position: center;
-	background-attachment: fixed;
+    transform: translateZ(-2px) scale(3);
 }
 
 #firsttxt, #secondtxt {
@@ -31,8 +50,4 @@ body {
 	-webkit-transform: rotateZ(-10deg); /* Chrome, Safari, Opera */
 	-moz-transform: rotateZ(-10deg); /* Firefox */
     transform: rotateZ(-10deg);
-}
-
-#onetwo {
-	background-color: rgba(0,0,255, 0.5);
 }
