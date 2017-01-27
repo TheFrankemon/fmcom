@@ -1,50 +1,46 @@
-.layer {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 100;
-  min-height: 400px;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
 .parallax {
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   perspective: 1px;
 }
 
-.parallax-group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
+.layer {
+/*	position: fixed;
+	width: 100%;
+	z-index: 100;
+	min-height: 400px;
+	background-position: top center;
+	background-repeat: no-repeat;*/
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
 }
 
-.parallax-group .layer1 {
+.parallax-group {
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+	/*transform: translate3d(100px,50px,0) rotateY(0.05deg) scaleX(0.6); /* Sexy DEBUG */
+}
+
+.layer0 {
 	margin-top: 0px;
-	height: 2000px;
+	height: 100vh;
 	background-image: url(../assets/images/map.png);
-	background-size:100%;
 	background-position: center;
 	transform: translateZ(-4px) scale(5.05);
 }
 
-.parallax-group .layer2 {
-    margin-top: 20px;
-    min-height: 500px;
-	background-image: url(../assets/images/bkgrnd2.png);
-	background-size:100%;
-	background-position: center;
-    transform: translateZ(-2px) scale(3);
+.layer1 {
+    transform: translateZ(0) scale(1);
+	position: absolute;
+    top: 0;
+    min-height: 350px;
+	background-image: url(../assets/images/bkgrnd.png);
+	background-repeat: no-repeat;	
+    /*transform: translateZ(-2px) scale(3);*/
 }
-
-#firsttxt, #secondtxt {
-	background-image: url(../assets/images/scrap.png);
-	background-repeat: no-repeat;
-	overflow: visible;
-}
+/*Scale factor: 1 + (translateZ * -1) / perspective */
 
 .col-md-10 {
 	-webkit-transform: rotateZ(-10deg); /* Chrome, Safari, Opera */
